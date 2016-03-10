@@ -32,7 +32,7 @@ npm run stats
 
 ```
 cd ./react-alt-template
-sudo docker build . -t react-alt-template
+sudo docker build -t react-alt-template . 
 
 sudo docker run -p 80:8080 -d react-alt-template
 ```
