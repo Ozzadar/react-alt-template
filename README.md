@@ -1,23 +1,27 @@
-# kDaemon UI
+# React / Alt(Flux) template for node.js
 
-A UI for the kDaemon API
- 
-**Status: Visual / No functionality.**
+A template you can use to quickly set up node with hotloading.
 
-Node/NPM required.
-
-Built using React + Alt(Flux) + Webpack + Babel to try making modern UI possible.
-
-Working DockerFile inc.
-
-To play with it:
-
+##Installation
 ```
-	git clone https://github.com/superordinate/kDaemon_ui
-	cd kDaemon_ui
-	npm install
-	npm run start
+npm i react-alt-template
+```
 
-	(browse to localhost:8080)
-	
+##Features
+* React Framework
+* Alt(flux) Template
+* Hotloads js, jsx, css, html pages with:
+```
+cd ./react-flux-template
+HOST=0.0.0.0 PORT=8080 npm run start
+```
+* serves static files in /build with:
+```
+cd ./react-flux-template
+npm run build
+```
+*serves stats with
+```
+cd ./react-flux-template
+npm run stats
 ```
