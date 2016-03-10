@@ -20,7 +20,7 @@ HOST=0.0.0.0 PORT=8080 npm run start
 cd ./react-flux-template
 npm run build
 ```
-*serves stats with
+* serves stats with
 ```
 cd ./react-flux-template
 npm run stats
