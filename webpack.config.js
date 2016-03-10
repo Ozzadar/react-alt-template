@@ -51,7 +51,7 @@ const common = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'node_modules/html-webpack-template/index.html',
-			title: 'kDaemon',
+			title: 'React + Alt Template',
 			appMountId: 'app',
 			inject: false,
 			favicon: './app/images/favicon.ico'
