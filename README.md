@@ -3,9 +3,11 @@
 A template you can use to quickly set up node with hotloading.
 
 ##Installation
+
 ```
 npm i react-alt-template
 ```
+
 
 ##Features
 * React Framework
@@ -24,4 +26,13 @@ npm run build
 ```
 cd ./react-flux-template
 npm run stats
+```
+
+## Run the server on Docker
+
+```
+cd ./react-alt-template
+sudo docker build . -t react-alt-template
+
+sudo docker run -p 80:8080 -d react-alt-template
 ```
