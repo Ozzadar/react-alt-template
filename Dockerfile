@@ -1,19 +1,14 @@
-FROM node:5.5.0
+FROM node:argon
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-
-COPY package.json /usr/src/app
+COPY package.json /usr/src/app/
 RUN npm install
 
 COPY . /usr/src/app
-RUN npm run build
 
-WORKDIR /usr/src/app/build
-
-RUN npm i -g http-server
-
+ENV HOST=0.0.0.0
+ENV PORT=8080
 
 EXPOSE 8080
-
-CMD ["http-server"]
+CMD ["npm","run","start"]
